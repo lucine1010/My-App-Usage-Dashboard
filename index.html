@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A Week Inside My Phone</title>
+  <link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="tooltip" class="tooltip"></div>
+
+  <div class="page-wrapper">
+    <header class="hero">
+      <h1>A Week Inside My Phone</h1>
+      <p class="intro">Tracking screen time, pickups, and app habits through a personal planner layout</p><br>
+      <p class="intro">Left: total weekly minutes by app. Right: pickups compared with time spent.</p>
+    </header>
+
+    <div class="composition-container">
+      <div class="decoration white-note">
+        <div class="note-content">
+          <p style="font-weight: 600;">Data Source</p>
+          <p style="font-size: 11px;">iPhone Screen Time</p>
+          <p style="font-size: 10px; color: #888;">14-day tracking</p>
+        </div>
+      </div>
+
+      <div class="notebook-container">
+        <div class="notebook-spine"></div>
+
+        <div class="notebook-page left-page">
+          <div class="page-header">
+            <h2 class="page-title">Top Apps</h2>
+            <p class="page-subtitle">Weekly minutes by app</p>
+          </div>
+          <div id="bubble-chart" class="chart-area"></div>
+        </div>
+
+        <div class="notebook-page right-page">
+          <div class="page-header">
+            <h2 class="page-title">Usage Patterns</h2>
+            <p class="page-subtitle">Pickups and time spent per app</p>
+          </div>
+          <div id="scatter-chart" class="chart-area"></div>
+          <div id="scatter-legend" class="legend"></div>
+        </div>
+      </div>
+
+      <div class="decoration green-stick">
+        <div class="sticky-content">
+          <p>Rednote and WeChat dominate my weekly screen time.</p>
+        </div>
+      </div>
+
+      <div class="decoration blue-stick">
+        <div class="sticky-content">
+          <p>Some apps are checked often, while others lead to longer sessions.</p>
+        </div>
+      </div>
+
+      <!--<div class="decoration pen">
+        <img src="img/pen.png" alt="pen">
+      </div>-->
+      <div class="decoration phone">
+  <img src="img/phone1.png" alt="phone screen time">
+</div>
+    </div>
+  </div>
+
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
